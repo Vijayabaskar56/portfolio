@@ -746,6 +746,28 @@ footer {
   }
 }
 
+.alert-show {
+    display: block;
+    color: #00ff00;
+    font-weight: 700;
+    text-align: center;
+}
+
+.alert-hidden {
+  display: none;
+}
+
+.alertempty-show {
+  display: block;
+  color: #ff3700;
+  font-weight: 700;
+  text-align: center;
+}
+
+.alertempty-hidden {
+  display: none;
+}
+
 @media (max-width: 800px) {
   main .block .heading {
     width: 70%;
