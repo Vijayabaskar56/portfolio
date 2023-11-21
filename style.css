@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -13,7 +13,8 @@ body {
   cursor: none;
 }
 
-body button, body a {
+body button,
+body a {
   cursor: none;
   outline: none;
 }
@@ -46,7 +47,8 @@ body main #project .project-block .project-block-cont {
   color: #000;
 }
 
-body main #contact input, body main #contact textarea {
+body main #contact input,
+body main #contact textarea {
   border: 1px solid #000;
 }
 
@@ -114,7 +116,8 @@ body footer {
   color: #fff;
 }
 
-.dark main #contact input, .dark main #contact textarea {
+.dark main #contact input,
+.dark main #contact textarea {
   border: 1px solid #fff;
   color: #fff;
 }
@@ -140,11 +143,11 @@ body footer {
   position: absolute;
   border-radius: 50%;
   -webkit-transition-duration: 10ms;
-          transition-duration: 10ms;
+  transition-duration: 10ms;
   -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-animation: cursorAnimation .5s infinite alternate;
-          animation: cursorAnimation .5s infinite alternate;
+  transition-timing-function: ease-out;
+  -webkit-animation: cursorAnimation 0.5s infinite alternate;
+  animation: cursorAnimation 0.5s infinite alternate;
 }
 
 .red {
@@ -161,11 +164,11 @@ body footer {
   border: 2px solid #ffd271;
   position: absolute;
   border-radius: 50%;
-  opacity: .5;
+  opacity: 0.5;
   top: -10px;
   left: -10px;
-  -webkit-animation: cursorAnimation2 .5s infinite alternate;
-          animation: cursorAnimation2 .5s infinite alternate;
+  -webkit-animation: cursorAnimation2 0.5s infinite alternate;
+  animation: cursorAnimation2 0.5s infinite alternate;
 }
 
 #container {
@@ -180,8 +183,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 nav a {
@@ -209,8 +212,8 @@ nav #day-night {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #contact-left #contact-line {
@@ -237,7 +240,7 @@ main .block {
 }
 
 main .block .heading {
-  font-family: 'Major Mono Display', monospace;
+  font-family: "Major Mono Display", monospace;
   font-size: 3rem;
   width: 35%;
 }
@@ -253,11 +256,11 @@ main #about {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 90vh;
 }
 
@@ -269,7 +272,7 @@ main #skills .skill-blocks-all {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 main #skills .skill-block {
@@ -287,11 +290,11 @@ main #skills .skill-block .skill-line {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -367,8 +370,8 @@ main #edu .edu-block-main .edu-block-sub {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 main #edu .edu-block-main .edu-block-sub .edu-block {
@@ -392,7 +395,7 @@ main #project #project-all {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
@@ -404,8 +407,8 @@ main #project #project-all .project-block {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 1rem;
 }
 
@@ -421,23 +424,40 @@ main #project #project-all .project-block .project-block-cont {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-main #project #project-all .project-block .project-block-cont .project-block-heading {
+main
+  #project
+  #project-all
+  .project-block
+  .project-block-cont
+  .project-block-heading {
   font-size: 1.3rem;
 }
 
-main #project #project-all .project-block .project-block-cont span, main #project #project-all .project-block .project-block-cont p {
+main #project #project-all .project-block .project-block-cont span,
+main #project #project-all .project-block .project-block-cont p {
   font-size: 1.2rem;
 }
 
-main #project #project-all .project-block .project-block-cont .project-block-links-source {
+main
+  #project
+  #project-all
+  .project-block
+  .project-block-cont
+  .project-block-links-source {
   padding: 1rem;
 }
 
-main #project #project-all .project-block .project-block-cont .project-block-links-source a {
+main
+  #project
+  #project-all
+  .project-block
+  .project-block-cont
+  .project-block-links-source
+  a {
   display: block;
   text-decoration: none;
 }
@@ -449,7 +469,13 @@ main #project #project-all .project-block .project-block-cont .used-lang {
   overflow: visible;
 }
 
-main #project #project-all .project-block .project-block-cont .used-lang .label {
+main
+  #project
+  #project-all
+  .project-block
+  .project-block-cont
+  .used-lang
+  .label {
   padding: 0 0.3rem;
   border-radius: 1rem;
   background: rgba(166, 250, 243, 0.623);
@@ -530,11 +556,11 @@ main #contact #contact-block .contact-input {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 main #contact #contact-block label {
@@ -543,7 +569,8 @@ main #contact #contact-block label {
   margin-right: 1rem;
 }
 
-main #contact #contact-block input, main #contact #contact-block textarea {
+main #contact #contact-block input,
+main #contact #contact-block textarea {
   width: 90%;
   outline: none;
   padding: 0.8rem;
@@ -562,11 +589,11 @@ footer {
 
 .animaaation {
   -webkit-animation-name: wipe-enter;
-          animation-name: wipe-enter;
+  animation-name: wipe-enter;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes wipe-enter {
@@ -594,44 +621,44 @@ footer {
 @-webkit-keyframes cursorAnimation {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    transform: scale(0.6);
   }
 }
 
 @keyframes cursorAnimation {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    transform: scale(0.6);
   }
 }
 
 @-webkit-keyframes cursorAnimation2 {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0.4);
-            transform: scale(0.4);
+    transform: scale(0.4);
   }
 }
 
 @keyframes cursorAnimation2 {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0.4);
-            transform: scale(0.4);
+    transform: scale(0.4);
   }
 }
 
@@ -647,7 +674,7 @@ footer {
     font-size: 4rem;
   }
   main .block .heading {
-    width: 100%  !important;
+    width: 100% !important;
     font-size: 2.2rem;
   }
   main .block {
@@ -655,7 +682,7 @@ footer {
   }
   main #skills .skill-blocks-all {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   main #skills .skill-block .skill-block-heading {
     font-size: 1rem;
@@ -671,9 +698,18 @@ footer {
   }
   main #project #project-all {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
-  main #project #project-all .project-block .project-block-cont span, main #project #project-all main #project #project-all .project-block .project-block-cont p {
+  main #project #project-all .project-block .project-block-cont span,
+  main
+    #project
+    #project-all
+    main
+    #project
+    #project-all
+    .project-block
+    .project-block-cont
+    p {
     font-size: 1rem;
   }
   main #project #project-all .project-block1 {
@@ -725,7 +761,8 @@ footer {
   main #contact #contact-block .contact-input {
     display: block;
   }
-  main #contact #contact-block input, main #contact #contact-block textarea {
+  main #contact #contact-block input,
+  main #contact #contact-block textarea {
     width: 100%;
     padding: 0.6rem;
   }
@@ -737,7 +774,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     padding: 1rem;
     padding-bottom: none;
   }
@@ -747,10 +784,10 @@ footer {
 }
 
 .alert-show {
-    display: block;
-    color: #00ff00;
-    font-weight: 700;
-    text-align: center;
+  display: block;
+  color: #00ff00;
+  font-weight: 700;
+  text-align: center;
 }
 
 .alert-hidden {
@@ -774,3 +811,37 @@ footer {
   }
 }
 /*# sourceMappingURL=style.css.map */
+.blog-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blog-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.blog-content {
+  padding: 16px;
+}
+
+.blog-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.blog-text {
+  font-size: 14px;
+  color: #555;
+}
