@@ -84,60 +84,57 @@ element.forEach((a) =>
   a.addEventListener("mouseout", function (event) {
     cursor.classList.remove("red");
   })
-  );
+);
 
-  element.forEach(a => 
-    a.addEventListener("clikc", (e) => {
-      e.preventDefault()
-    })) 
+element.forEach((a) =>
+  a.addEventListener("clikc", (e) => {
+    e.preventDefault();
+  })
+);
 
 // form submission
 
 emailjs.init("5whAoyRT_fKNTIC-x");
 
-document
-  .getElementById("submit-btn")
-  .addEventListener("click", (event) => {
-    event.preventDefault();
+document.getElementById("submit-btn").addEventListener("click", (event) => {
+  event.preventDefault();
 
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const message = document.getElementById("message");
-    const alert = document.querySelector("#alert");
-    const alertempty = document.querySelector("#alertempty");
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
+  const alert = document.querySelector("#alert");
+  const alertempty = document.querySelector("#alertempty");
 
-    if (name.value != "" && email.value != "" && message.value != "") {
-      emailjs
-        .send("service_zdzgfkl", "template_6a00fcm", {
-          from_name: name.value,
-          from_email: email.value,
-          message: message.value,
-        })
-        .then(
-          function (response) {
-            console.log("Email sent:", response);
-            name.value = " ";
-            email.value = " ";
-            message.value = " ";
+  if (name.value != "" && email.value != "" && message.value != "") {
+    emailjs
+      .send("service_zdzgfkl", "template_6a00fcm", {
+        from_name: name.value,
+        from_email: email.value,
+        message: message.value,
+      })
+      .then(
+        function (response) {
+          console.log("Email sent:", response);
+          name.value = " ";
+          email.value = " ";
+          message.value = " ";
 
-            alert.classList.toggle("alert-hidden" ? "alert-show" : null);
-            setTimeout(() => {
-              alert.classList.add("alert-show" ? "alert-hidden" : null);
-            }, 3000);
-          },
-          function (error) {
-            console.log("Email error:", error);
-            alert("Email could not be sent. Please try again later.");
-          }
-        );
-    } else {
-      alertempty.classList.toggle(
-        "alertempty-hidden" ? "alertempty-show" : null
+          alert.classList.toggle("alert-hidden" ? "alert-show" : null);
+          setTimeout(() => {
+            alert.classList.add("alert-show" ? "alert-hidden" : null);
+          }, 3000);
+        },
+        function (error) {
+          console.log("Email error:", error);
+          alert("Email could not be sent. Please try again later.");
+        }
       );
-      setTimeout(() => {
-        alertempty.classList.toggle(
-          "alertempty-show" ? "alertempty-hidden" : null
-        );
-      }, 3000);
-    }
-  });
+  } else {
+    alertempty.classList.toggle("alertempty-hidden" ? "alertempty-show" : null);
+    setTimeout(() => {
+      alertempty.classList.toggle(
+        "alertempty-show" ? "alertempty-hidden" : null
+      );
+    }, 3000);
+  }
+});
