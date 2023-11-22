@@ -815,11 +815,15 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+.dark main #skills .skill-block .blog-card {
+  border: 1px solid #fff;
+}
 
 .blog-card {
   width: 300px;
-  border: 1px solid #ddd;
+  border: 1px solid #000;
   border-radius: 8px;
+  /* padding: 5px; */
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -843,5 +847,5 @@ footer {
 
 .blog-text {
   font-size: 14px;
-  color: #555;
+  /* color: #555; */
 }
