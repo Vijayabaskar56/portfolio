@@ -1,578 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <base target="_blank" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Vijaya Baskar | Portfolio</title>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-N89D8KJD");
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-N89D8KJD"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="cursor"></div>
-    <div id="container">
-      <nav>
-        <button id="day-night">
-          <i class="fas fa-sun"></i>
-        </button>
-      </nav>
 
-      <div id="contact-left">
-        <div id="contact-line"></div>
-        <div id="contact-left-links">
-          <a href="https://twitter.com/VJBass1"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/vijaya-baskar/"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a href="mailto:vj2k02@gmail.com"><i class="fas fa-envelope"></i></a>
-          <a href="https://github.com/Vijayabaskar56"
-            ><i class="fab fa-github"></i
-          ></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <base target="_blank" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Vijaya Baskar | Portfolio</title>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-N89D8KJD");
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N89D8KJD" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- <div class="cursor"></div> -->
+  <div id="container">
+    <nav>
+      <button id="day-night" onclick="alter()">
+        <!-- <i class="fas fa-sun"></i> -->
+      </button>
+    </nav>
+
+    <div id="contact-left">
+      <div id="contact-line"></div>
+      <div id="contact-left-links">
+        <a href="https://twitter.com/VJBass1"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/vijaya-baskar/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:vj2k02@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Vijayabaskar56"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <main>
+      <div id="about" class="block">
+        <div class="heading" id="heading--main"></div>
+        <p>
+          <span style="font-size: 2rem">👋</span> Hey I am
+          <span style="color: green">Vijayabaskar</span>!! <br />a Full Stack
+          Developer from India
+          <!-- add info -->
+        </p>
+      </div>
+
+      <div id="skills" class="block" data-aos="slide-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back">
+
+        <div class="heading" id="skill--heading">SKILLS & Tools</div>
+        <div class="skill-blocks-all">
+          <div class="skill-block">
+            <span class="skill-block-heading">HTML</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">CSS3</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <i class="fab fa-css3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">BOOTSTRAP</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <i class="fab fa-bootstrap"></i>
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">PHP</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <i class="fab fa-php"></i>
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">JAVASCRIPT</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">Java</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <img src="./images/java-svgrepo-com.svg" alt="" srcset="" style="height: fit-content; width: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">Python</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <img src="./images/python-svgrepo-com.svg" alt="" srcset="" style="height: fit-content; width: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">React-JS</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <img src="./images/react-svgrepo-com.svg" alt="" srcset="" style="height: fit-content; width: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">Node-JS</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <img src="./images/node-16-svgrepo-com.svg" alt="" srcset="" style="height: fit-content; width: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">Tailwind</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <img src="./images/tailwind-css-svgrepo-com.svg" alt="" srcset=""
+                  style="height: fit-content; width: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">Next-JS</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <img src="./images/nextjs-fill-svgrepo-com.svg" alt="" srcset=""
+                  style="height: fit-content; width: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">TypeScript</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <img src="./images/typescript-svgrepo-com.svg" alt="" srcset=""
+                  style="height: fit-content; width: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">Graphql</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <img src="./images/graphql-svgrepo-com.svg" alt="" srcset="" style="height: fit-content; width: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">SQL</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <img src="./images/mysql-svgrepo-com.svg" alt="" srcset="" style="height: fit-content; width: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">MongoDB</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <img src="./images/mongodb-svgrepo-com.svg" alt="" srcset="" style="height: fit-content; width: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="skill-block">
+            <span class="skill-block-heading">Git</span>
+            <div class="skill-line">
+              <div class="skill-icon">
+                <i class="fab fa-git"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <main>
-        <div id="about" class="block">
-          <div class="heading" id="heading--main"></div>
-          <p>
-            <span style="font-size: 2rem">👋</span> Hey I am
-            <span style="color: green">Vijayabaskar</span>!! <br />a Full Stack
-            Developer from India
-            <!-- add info -->
-          </p>
-        </div>
-
-        <div
-          id="skills"
-          class="block"
-          data-aos="slide-up"
-          data-aos-duration="1200"
-          data-aos-easing="ease-in-out-back"
-        >
-          <div class="heading" id="skill--heading">BLOGS</div>
-          <div class="skill-block">
-            <div class="blog-container" id="blogContainer"></div>
-          </div>
-
-          <!-- <div class="skill-blocks-all">
-            <div class="skill-block">
-              <span class="skill-block-heading">HTML5</span>
-              <div class="skill-line">
-                <div id="skill-line-html5"></div>
-                <span>80%</span>
-              </div>
+      <div id="edu" class="block" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out-back">
+        <div class="heading">EDUCATION</div>
+        <div class="edu-block-main">
+          <div class="edu-block-sub">
+            <div class="edu-block" data-aos="flip-down">
+              <span class="edu-block-heading">SECONDARY </span>
+              <p>
+                Sourashtra Hr. Sec. School, Madurai.<br />
+                Completed in 2018 with 85.8%
+              </p>
             </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">CSS3</span>
-              <div class="skill-line">
-                <div id="skill-line-css3"></div>
-                <span>70%</span>
-              </div>
+            <div class="edu-block" data-aos="flip-down">
+              <span class="edu-block-heading">HIGHER SECONDARY</span>
+              <p>
+                Sourashtra Hr. Sec. School, Madurai.<br />
+                Completed in 2020 with 61%
+              </p>
             </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">SCSS</span>
-              <div class="skill-line">
-                <div id="skill-line-saas"></div>
-                <span>80%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">BOOTSTRAP</span>
-              <div class="skill-line">
-                <div id="skill-line-bootstrap"></div>
-                <span>50%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">JAVASCRIPT</span>
-              <div class="skill-line">
-                <div id="skill-line-javascript"></div>
-                <span>70%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">JQuery</span>
-              <div class="skill-line">
-                <div id="skill-line-jquery"></div>
-                <span>60%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">Python</span>
-              <div class="skill-line">
-                <div id="skill-line-python"></div>
-                <span>60%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">C++</span>
-              <div class="skill-line">
-                <div id="skill-line-c"></div>
-                <span>60%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">PHP</span>
-              <div class="skill-line">
-                <div id="skill-line-php"></div>
-                <span>75%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">SQL</span>
-              <div class="skill-line">
-                <div id="skill-line-mysql"></div>
-                <span>70%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">MongoDB</span>
-              <div class="skill-line">
-                <div id="skill-line-mongo"></div>
-                <span>50%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">Java</span>
-              <div class="skill-line">
-                <div id="skill-line-java"></div>
-                <span>60%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">Git</span>
-              <div class="skill-line">
-                <div id="skill-line-git"></div>
-                <span>80%</span>
-              </div>
-            </div>
-            <div class="skill-block">
-              <span class="skill-block-heading">Figma</span>
-              <div class="skill-line">
-                <div id="skill-line-figma"></div>
-                <span>50%</span>
-              </div>
-            </div>
-          </div> -->
-        </div>
-
-        <div
-          id="edu"
-          class="block"
-          data-aos="slide-up"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out-back"
-        >
-          <div class="heading">EDUCATION</div>
-          <div class="edu-block-main">
-            <div class="edu-block-sub">
-              <div class="edu-block" data-aos="flip-down">
-                <span class="edu-block-heading">SECONDARY </span>
-                <p>
-                  Sourashtra Hr. Sec. School, Madurai.<br />
-                  Completed in 2018 with 85.8%
-                </p>
-              </div>
-              <div class="edu-block" data-aos="flip-down">
-                <span class="edu-block-heading">HIGHER SECONDARY</span>
-                <p>
-                  Sourashtra Hr. Sec. School, Madurai.<br />
-                  Completed in 2020 with 61%
-                </p>
-              </div>
-              <div class="edu-block" data-aos="flip-down">
-                <span class="edu-block-heading">BSc IT</span>
-                <p>
-                  The Madura College, Madurai<br />
-                  Completed in 2023 with 73.6%
-                </p>
-              </div>
+            <div class="edu-block" data-aos="flip-down">
+              <span class="edu-block-heading">BSc IT</span>
+              <p>
+                The Madura College, Madurai<br />
+                Completed in 2023 with 73.6%
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div id="project" class="block">
-          <div class="heading">PROJECT</div>
-          <div id="project-all">
-            <div
-              class="project-block project-block1"
-              data-aos="slide-left"
-              data-aos-easing="ease-in-out"
-            >
-              <img
-                src="images/Twitter-Clone.png"
-                alt="crowdfunding-landing-page"
-              />
-              <div class="project-block-cont">
-                <span class="project-block-heading"
-                  >Twitter Clone with React-JS</span
-                >
-                <div class="project-block-links-source">
-                  <a
-                    class="project-block-source"
-                    href="https://github.com/Vijayabaskar56/twitterClone"
-                    >source code</a
-                  >
-                  <a class="project-block-link" href="#">live site</a>
-                </div>
-                <div class="project-block-links-source">currently working</div>
-                <div class="used-lang">
-                  <span class="label">React-Js</span>
-                  <span class="label">Tailwind</span>
-                  <span class="label">PostgreSQl</span>
-                </div>
+      <div id="project" class="block">
+        <div class="heading">PROJECT</div>
+        <div id="project-all">
+          <div class="project-block project-block1" data-aos="slide-left" data-aos-easing="ease-in-out">
+            <img src="images/Twitter-Clone.png" alt="crowdfunding-landing-page" />
+            <div class="project-block-cont">
+              <span class="project-block-heading">Twitter Clone with React-JS</span>
+              <div class="project-block-links-source">
+                <a class="project-block-source" href="https://github.com/Vijayabaskar56/twitterClone">source code</a>
+                <a class="project-block-link" href="#">live site</a>
+              </div>
+              <div class="project-block-links-source">currently working</div>
+              <div class="used-lang">
+                <span class="label">React-Js</span>
+                <span class="label">Tailwind</span>
+                <span class="label">PostgreSQl</span>
               </div>
             </div>
+          </div>
 
-            <div
-              class="project-block project-block2"
-              data-aos="slide-left"
-              data-aos-easing="ease-in-out"
-            >
-              <img src="images/hackathon.png" alt="blogr-landing-page" />
-              <div class="project-block-cont">
-                <span class="project-block-heading"
-                  >Hackathon Landing Page</span
-                >
-                <div class="project-block-links-source">
-                  <a
-                    class="project-block-source"
-                    href="https://github.com/Vijayabaskar56/hackathon-site"
-                    >source code</a
-                  >
-                  <a
-                    class="project-block-link"
-                    href="https://64eaee2e067a02398226a721--resplendent-semifreddo-a1da2e.netlify.app/"
-                    >live site</a
-                  >
-                </div>
-                <div class="used-lang">
-                  <span class="label">React-JS</span>
-                  <span class="label">Node-JS</span>
-                  <!-- <span class="label">JAVASCRIPT</span> -->
-                </div>
+          <div class="project-block project-block2" data-aos="slide-left" data-aos-easing="ease-in-out">
+            <img src="images/hackathon.png" alt="blogr-landing-page" />
+            <div class="project-block-cont">
+              <span class="project-block-heading">Hackathon Landing Page</span>
+              <div class="project-block-links-source">
+                <a class="project-block-source" href="https://github.com/Vijayabaskar56/hackathon-site">source code</a>
+                <a class="project-block-link"
+                  href="https://64eaee2e067a02398226a721--resplendent-semifreddo-a1da2e.netlify.app/">live site</a>
+              </div>
+              <div class="used-lang">
+                <span class="label">React-JS</span>
+                <span class="label">Node-JS</span>
+                <!-- <span class="label">JAVASCRIPT</span> -->
               </div>
             </div>
+          </div>
 
-            <div
-              class="project-block project-block3"
-              data-aos="slide-right"
-              data-aos-easing="ease-in-out"
-            >
-              <img
-                src="images/random-quote-generator.png"
-                alt="random-quote-generator"
-              />
-              <div class="project-block-cont">
-                <span class="project-block-heading"
-                  >Random Quote Generator</span
-                >
-                <div class="project-block-links-source">
-                  <a
-                    class="project-block-source"
-                    href="https://github.com/Vijayabaskar56/react-projects/tree/main/darkmode"
-                    >source code</a
-                  >
-                  <a
-                    class="project-block-link"
-                    href="https://quote-generator-j4pl.onrender.com/"
-                    >live site</a
-                  >
-                </div>
-                <div class="used-lang">
-                  <span class="label">React-JS</span>
-                  <span class="label">Formik</span>
-                  <!-- <span class="label">JQuery</span> -->
-                </div>
+          <div class="project-block project-block3" data-aos="slide-right" data-aos-easing="ease-in-out">
+            <img src="images/random-quote-generator.png" alt="random-quote-generator" />
+            <div class="project-block-cont">
+              <span class="project-block-heading">Random Quote Generator</span>
+              <div class="project-block-links-source">
+                <a class="project-block-source"
+                  href="https://github.com/Vijayabaskar56/react-projects/tree/main/darkmode">source code</a>
+                <a class="project-block-link" href="https://quote-generator-j4pl.onrender.com/">live site</a>
+              </div>
+              <div class="used-lang">
+                <span class="label">React-JS</span>
+                <span class="label">Formik</span>
+                <!-- <span class="label">JQuery</span> -->
               </div>
             </div>
+          </div>
 
-            <div
-              class="project-block project-block4"
-              data-aos="slide-right"
-              data-aos-easing="ease-in-out"
-            >
-              <img src="images/password-generator.png" alt="tic-tac-toe" />
-              <div class="project-block-cont">
-                <span class="project-block-heading">Password Generator</span>
-                <div class="project-block-links-source">
-                  <a
-                    class="project-block-source"
-                    href="https://github.com/priya180975/tic-tac-toe"
-                    >source code</a
-                  >
-                  <a
-                    class="project-block-link"
-                    href="https://priya180975.github.io/tic-tac-toe/"
-                    >live site</a
-                  >
-                </div>
-                <div class="used-lang">
-                  <span class="label">HTML5</span>
-                  <span class="label">SCSS</span>
-                  <span class="label">JQuery</span>
-                </div>
+          <div class="project-block project-block4" data-aos="slide-right" data-aos-easing="ease-in-out">
+            <img src="images/password-generator.png" alt="tic-tac-toe" />
+            <div class="project-block-cont">
+              <span class="project-block-heading">Password Generator</span>
+              <div class="project-block-links-source">
+                <a class="project-block-source" href="https://github.com/priya180975/tic-tac-toe">source code</a>
+                <a class="project-block-link" href="https://priya180975.github.io/tic-tac-toe/">live site</a>
+              </div>
+              <div class="used-lang">
+                <span class="label">HTML5</span>
+                <span class="label">SCSS</span>
+                <span class="label">JQuery</span>
               </div>
             </div>
+          </div>
 
-            <div
-              class="project-block project-block5"
-              data-aos="slide-left"
-              data-aos-easing="ease-in-out"
-            >
-              <img
-                src="images/react-native.png"
-                alt="3-column-preview-card-component-main"
-              />
-              <div class="project-block-cont">
-                <span class="project-block-heading">React-Native-App</span>
-                <div class="project-block-links-source">
-                  <a
-                    class="project-block-source"
-                    href="https://github.com/Vijayabaskar56/react-native-app-portfolio"
-                    >source code</a
-                  >
-                  <!-- <a
+          <div class="project-block project-block5" data-aos="slide-left" data-aos-easing="ease-in-out">
+            <img src="images/react-native.png" alt="3-column-preview-card-component-main" />
+            <div class="project-block-cont">
+              <span class="project-block-heading">React-Native-App</span>
+              <div class="project-block-links-source">
+                <a class="project-block-source"
+                  href="https://github.com/Vijayabaskar56/react-native-app-portfolio">source code</a>
+                <!-- <a
                     class="project-block-link"
                     href="https://priya-3-column-preview-card-component-main.netlify.app/"
                     >live site</a
                   > -->
-                </div>
-                <div class="used-lang">
-                  <span class="label">HTML5</span>
-                  <span class="label">CSS3</span>
-                </div>
+              </div>
+              <div class="used-lang">
+                <span class="label">HTML5</span>
+                <span class="label">CSS3</span>
               </div>
             </div>
+          </div>
 
-            <div
-              class="project-block project-block6"
-              data-aos="slide-right"
-              data-aos-easing="ease-in-out"
-            >
-              <img
-                src="images/resume-tailwind.png"
-                alt="stats-preview-card-component-main"
-              />
-              <div class="project-block-cont">
-                <span class="project-block-heading"
-                  >Resume-site with Tailwind</span
-                >
-                <div class="project-block-links-source">
-                  <a
-                    class="project-block-source"
-                    href="https://github.com/Vijayabaskar56/100x/tree/main/resumetailwind"
-                    >source code</a
-                  >
-                  <a
-                    class="project-block-link"
-                    href="https://resumetailwind.onrender.com/"
-                    >live site</a
-                  >
-                </div>
-                <div class="used-lang">
-                  <span class="label">HTML5</span>
-                  <span class="label">CSS3</span>
-                </div>
+          <div class="project-block project-block6" data-aos="slide-right" data-aos-easing="ease-in-out">
+            <img src="images/resume-tailwind.png" alt="stats-preview-card-component-main" />
+            <div class="project-block-cont">
+              <span class="project-block-heading">Resume-site with Tailwind</span>
+              <div class="project-block-links-source">
+                <a class="project-block-source"
+                  href="https://github.com/Vijayabaskar56/100x/tree/main/resumetailwind">source code</a>
+                <a class="project-block-link" href="https://resumetailwind.onrender.com/">live site</a>
+              </div>
+              <div class="used-lang">
+                <span class="label">HTML5</span>
+                <span class="label">CSS3</span>
               </div>
             </div>
+          </div>
 
-            <div
-              class="project-block project-block7"
-              data-aos="slide-right"
-              data-aos-easing="ease-in-out"
-            >
-              <img src="images/chat-app.png" alt="weconnected" />
-              <div class="project-block-cont">
-                <span class="project-block-heading">Web Chat App</span>
-                <div class="project-block-links-source">
-                  <a
-                    class="project-block-source"
-                    href="https://github.com/Vijayabaskar56/100x/tree/main/chat"
-                    >source code</a
-                  >
-                  <a
-                    class="project-block-link"
-                    href=" https://chat-app-100x.onrender.com"
-                    >live site</a
-                  >
-                </div>
-                <div class="used-lang">
-                  <span class="label">HTML5</span>
-                  <span class="label">CSS</span>
-                  <span class="label">JAVASCRIPT</span>
-                  <span class="label">Node-JS</span>
-                  <!-- <span class="label">MYSQL</span> -->
-                </div>
+          <div class="project-block project-block7" data-aos="slide-right" data-aos-easing="ease-in-out">
+            <img src="images/chat-app.png" alt="weconnected" />
+            <div class="project-block-cont">
+              <span class="project-block-heading">Web Chat App</span>
+              <div class="project-block-links-source">
+                <a class="project-block-source" href="https://github.com/Vijayabaskar56/100x/tree/main/chat">source
+                  code</a>
+                <a class="project-block-link" href=" https://chat-app-100x.onrender.com">live site</a>
+              </div>
+              <div class="used-lang">
+                <span class="label">HTML5</span>
+                <span class="label">CSS</span>
+                <span class="label">JAVASCRIPT</span>
+                <span class="label">Node-JS</span>
+                <!-- <span class="label">MYSQL</span> -->
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="block" id="contact">
-          <div class="heading">CONTACT</div>
-          <form
-            method="post"
-            id="contact-block"
-            data-aos="slide-right"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out-back"
-          >
-            <div class="contact-input">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
-            </div>
-            <div class="contact-input">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="_replyto" />
-            </div>
-            <div class="contact-input">
-              <label for="message">Message</label>
-              <textarea name="message" id="message"></textarea>
-            </div>
-            <div class="alert-hidden" id="alert">
-              Thank for connet, will get back to you soon 😁
-            </div>
-            <div class="alertempty-hidden" id="alertempty">
-              Please Enter all Fields
-            </div>
-            <button value="submit" id="submit-btn">Submit</button>
-          </form>
-        </div>
-      </main>
-    </div>
-    <div id="contact-links">
-      <a href="https://twitter.com/VJBass1"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/vijaya-baskar/"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <a href="mailto:vj2k02@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/Vijayabaskar56"
-        ><i class="fab fa-github"></i
-      ></a>
-    </div>
-    <footer>Made with ❤️ by Vijaya Baskar</footer>
-    <script src="./script.js"></script>
-    <script src="./formSUbmission.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-      const query = `
-      query Publication {
-  publication(host: "vijayabaskar.hashnode.dev") {
-    isTeam
-    title
-    posts(first: 3) {
-      edges {
-        node {
-          title
-          brief
-          url
-          coverImage {
-            url
-          }
-        }
-      }
-    }
-  }
-}
-      `;
+      <div class="block" id="contact">
+        <div class="heading">CONTACT</div>
+        <form method="post" id="contact-block" data-aos="slide-right" data-aos-duration="1000"
+          data-aos-easing="ease-in-out-back">
+          <div class="contact-input">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="contact-input">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" />
+          </div>
+          <div class="contact-input">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div class="alert-hidden" id="alert">
+            Thank for connet, will get back to you soon 😁
+          </div>
+          <div class="alertempty-hidden" id="alertempty">
+            Please Enter all Fields
+          </div>
+          <button value="submit" id="submit-btn">Submit</button>
+        </form>
+      </div>
+    </main>
+  </div>
+  <div id="contact-links">
+    <a href="https://twitter.com/VJBass1"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/vijaya-baskar/"><i class="fab fa-linkedin-in"></i></a>
+    <a href="mailto:vj2k02@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/Vijayabaskar56"><i class="fab fa-github"></i></a>
+  </div>
+  <footer>
+    <button onclick="topFunction()" id="scrollToTop" title="Go to top">Scroll To The Top</button>
+  </footer>
+  <script src="./script.js"></script>
+  <script src="./formSUbmission.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 
-      async function gql(query) {
-        const response = await fetch("https://gql.hashnode.com/", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ query }),
-        });
-        return response.json();
-      }
-
-      // GraphQL query
-
-      // Fetch data and create blog cards
-      async function createBlogCards() {
-        const response = await gql(query);
-        const publication = response.data.publication;
-        console.log(publication);
-
-        if (publication) {
-          const posts = publication.posts.edges;
-
-          const blogContainer = document.getElementById("blogContainer");
-
-          posts.forEach((post) => {
-            const blogCard = document.createElement("div");
-            blogCard.className = "blog-card";
-
-            const blogImage = document.createElement("img");
-            blogImage.className = "blog-image";
-            blogImage.src = post.node.coverImage.url;
-            blogImage.alt = "Blog Image";
-
-            const blogContent = document.createElement("div");
-            blogContent.className = "blog-content";
-
-            const blogTitle = document.createElement("div");
-            blogTitle.className = "blog-title";
-            blogTitle.textContent = post.node.title;
-
-            const blogText = document.createElement("div");
-            blogText.className = "blog-text";
-            blogText.textContent = post.node.brief;
-
-            // Append elements to the blog card
-            blogContent.appendChild(blogTitle);
-            blogContent.appendChild(blogText);
-
-            blogCard.appendChild(blogImage);
-            blogCard.appendChild(blogContent);
-
-            blogContainer.appendChild(blogCard);
-          });
-        }
-      }
-
-      // Call the function to create blog cards
-      createBlogCards();
-    </script>
-  </body>
 </html>

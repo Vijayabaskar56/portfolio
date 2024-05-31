@@ -9,13 +9,8 @@
   overflow-x: hidden;
 }
 
-body {
-  cursor: none;
-}
-
 body button,
 body a {
-  cursor: none;
   outline: none;
 }
 
@@ -32,7 +27,7 @@ body main #skills .skill-line {
 }
 
 body main #skills .skill-line div {
-  background: #000;
+  background: transparent;
 }
 
 body main #edu .edu-block {
@@ -271,17 +266,24 @@ main #about #heading--main {
 main #skills .skill-blocks-all {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 main #skills .skill-block {
   margin-top: 0rem;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main #skills .skill-block .skill-block-heading {
   font-size: 1.3rem;
+}
+
+.skill-icon {
+  font-size: 44px;
 }
 
 main #skills .skill-block .skill-line {
@@ -289,12 +291,13 @@ main #skills .skill-block .skill-line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem;
 }
 
@@ -587,6 +590,13 @@ footer {
   font-size: 0.8rem;
 }
 
+footer #scrollToTop {
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
 .animaaation {
   -webkit-animation-name: wipe-enter;
   animation-name: wipe-enter;
@@ -681,8 +691,8 @@ footer {
     padding: 1rem 0rem 1rem 1rem;
   }
   main #skills .skill-blocks-all {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   main #skills .skill-block .skill-block-heading {
     font-size: 1rem;

@@ -7,7 +7,7 @@ function type() {
       let n = namearr.shift();
       document.querySelector("#heading--main").innerHTML += n;
     } else {
-      //deleting();
+      deleting();
       return false;
     }
     setTimeout(looping, 500);
@@ -30,22 +30,6 @@ function deleting() {
 
 type();
 
-//skills fill effect
-
-const square = document.querySelectorAll(".skill-line div");
-// square.forEach(a=>a.classList.remove('animaaation'));
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("animaaation");
-      return;
-    }
-
-    entry.target.classList.remove("animaaation");
-  });
-});
-
 square.forEach((a) => observer.observe(a));
 
 //light dark theme
@@ -66,6 +50,7 @@ function alter() {
 //cursor
 const cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
+  cursor.classList.add("active");
   cursor.setAttribute(
     "style",
     "top: " + (e.pageY - 20) + "px;left: " + (e.pageX - 20) + "px"
@@ -138,3 +123,8 @@ document.getElementById("submit-btn").addEventListener("click", (event) => {
     }, 3000);
   }
 });
+
+// scroll to the top button
+function topFunction() {
+  window.scroll({ top: 0, behavior: "smooth" });
+}
